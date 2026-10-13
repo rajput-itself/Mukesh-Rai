@@ -1,14 +1,9 @@
 <?php
-// Example Local Database Configuration
-// Copy this file to "config.local.php" and enter your actual Hostinger credentials.
-// "config.local.php" is ignored by Git and will never be pushed to GitHub.
-
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'u123456789_mukeshrai');
 define('DB_USER', 'u123456789_dbuser');
-define('DB_PASS', 'YOUR_ACTUAL_PASSWORD_HERE');
+define('DB_PASS', 'YOUR_DATABASE_PASSWORD');
 define('DB_CHARSET', 'utf8mb4');
 
-// Optional Email Notification Config
 define('SEND_EMAIL_NOTIFICATION', false);
 define('NOTIFICATION_RECIPIENT', 'contact@aaprin.com');
