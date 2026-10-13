@@ -7,18 +7,52 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies & Build Output
 node_modules
 dist
 dist-ssr
 *.local
 
+# Environment variables & Secrets
+.env
+.env.*
+*.env
+!.env.example
+
+# Credentials, Keys & Database files
+*.pem
+*.key
+*.cert
+*.crt
+*.sql
+*.sqlite
+*.db
+
+# Backend local configuration & sensitive configs
+*.local.php
+config.local.php
+public/api/config.local.php
+
+# Operating System files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swo
+*.swp
+
+# Internal dev scratchpads & design plans
+scol.md
+*.scratch.*

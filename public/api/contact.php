@@ -33,17 +33,20 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // --------------------------------------------------------------------------
 // 2. Hostinger Database Configuration
 // --------------------------------------------------------------------------
-// Replace these with your actual Hostinger MySQL database credentials
-// found in Hostinger hPanel -> Databases -> Management
-define('DB_HOST', 'localhost');              // Usually 'localhost' on Hostinger
-define('DB_NAME', 'u123456789_mukeshrai');   // Your Hostinger Database Name
-define('DB_USER', 'u123456789_dbuser');      // Your Hostinger Database Username
-define('DB_PASS', 'YOUR_DATABASE_PASSWORD');  // Your Hostinger Database Password
-define('DB_CHARSET', 'utf8mb4');
+// Load optional local config if present (ignored by git for security)
+if (file_exists(__DIR__ . '/config.local.php')) {
+    require_once __DIR__ . '/config.local.php';
+}
+
+defined('DB_HOST') || define('DB_HOST', getenv('DB_HOST') ?: 'localhost');              // Usually 'localhost' on Hostinger
+defined('DB_NAME') || define('DB_NAME', getenv('DB_NAME') ?: 'u123456789_mukeshrai');   // Your Hostinger Database Name
+defined('DB_USER') || define('DB_USER', getenv('DB_USER') ?: 'u123456789_dbuser');      // Your Hostinger Database Username
+defined('DB_PASS') || define('DB_PASS', getenv('DB_PASS') ?: 'YOUR_DATABASE_PASSWORD');  // Your Hostinger Database Password (put in config.local.php)
+defined('DB_CHARSET') || define('DB_CHARSET', 'utf8mb4');
 
 // Optional Email Notification Config
-define('SEND_EMAIL_NOTIFICATION', false);     // Set to true to receive emails on new submission
-define('NOTIFICATION_RECIPIENT', 'contact@aaprin.com');
+defined('SEND_EMAIL_NOTIFICATION') || define('SEND_EMAIL_NOTIFICATION', false);     // Set to true to receive emails on new submission
+defined('NOTIFICATION_RECIPIENT') || define('NOTIFICATION_RECIPIENT', 'contact@aaprin.com');
 
 // --------------------------------------------------------------------------
 // 3. Parse & Sanitize Input Data
