@@ -1,0 +1,17 @@
+{
+  "name": "Mukesh Rai — Executive Portfolio",
+  "short_name": "Mukesh Rai",
+  "description": "Official executive digital identity of Mukesh Rai. Leadership. Technology. Vision. Execution.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090d",
+  "theme_color": "#08090d",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

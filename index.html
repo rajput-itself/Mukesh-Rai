@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href="https://mukeshrai.com/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090d" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+          if (saved === 'light' || (!saved && prefersLight)) {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+            document.documentElement.setAttribute('data-theme', 'light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <title>Mukesh Rai — Managing Director & Technology Executive</title>
+    <meta name="title" content="Mukesh Rai — Managing Director & Technology Executive" />
+    <meta name="description" content="Official executive portfolio of Mukesh Rai, Managing Director & CEO at AAPRIN Technologies & MPA Solution. Strategic leadership, enterprise software architecture, AI systems, and digital transformation." />
+    <meta name="keywords" content="Mukesh Rai, Technology Executive, Managing Director, CEO, AAPRIN Technologies, MPA Solution, Enterprise Architecture, Pune, Cloud Computing, AI" />
+    <meta name="author" content="Mukesh Rai" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mukeshrai.com/" />
+    <meta property="og:title" content="Mukesh Rai — Managing Director & Technology Executive" />
+    <meta property="og:description" content="Official executive digital identity of Mukesh Rai. Leadership. Technology. Vision. Execution." />
+    <meta property="og:image" content="https://mukeshrai.com/portrait.webp" />
+    <meta property="og:site_name" content="Mukesh Rai" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://mukeshrai.com/" />
+    <meta name="twitter:title" content="Mukesh Rai — Managing Director & Technology Executive" />
+    <meta name="twitter:description" content="Executive digital identity of Mukesh Rai. Leadership. Technology. Vision. Execution." />
+    <meta name="twitter:image" content="https://mukeshrai.com/portrait.webp" />
+    
+    <link rel="preload" as="image" href="/portrait.webp" type="image/webp" fetchpriority="high" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      />
+    </noscript>
+  </head>
+  <body class="bg-[#0b0c10] text-[#e2e8f0] antialiased selection:bg-[#2563eb]/30 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
